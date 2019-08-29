@@ -14,14 +14,21 @@
   [request]
   (ring-resp/response "Hello Hodor"))
 
+(defn sample-json
+  [request]
+  (ring-resp/response {:user "lucas" :languages ["Clojure" "JavaScript" "C#" "Python"]}))
+
 ;; Defines "/" and "/about" routes with their associated :get handlers.
 ;; The interceptors defined after the verb map (e.g., {:get home-page}
+;; Json body parser for response using json
 ;; apply to / and its children (/about).
 (def common-interceptors [(body-params/body-params) http/html-body])
+(def common-interceptors-json [(body-params/body-params) http/json-body])
 
 ;; Tabular routes
 (def routes #{["/" :get (conj common-interceptors `home-page)]
-              ["/about" :get (conj common-interceptors `about-page)]})
+              ["/about" :get (conj common-interceptors `about-page)]
+              ["/json" :get (conj common-interceptors-json `sample-json)]})
 
 ;; Map-based routes
 ;(def routes `{"/" {:interceptors [(body-params/body-params) http/html-body]

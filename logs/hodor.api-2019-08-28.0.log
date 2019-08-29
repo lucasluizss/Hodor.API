@@ -3,3 +3,15 @@
 21:32:18.438 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@7e26e452{/,null,AVAILABLE}
 21:32:18.498 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@44185116{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
 21:32:18.498 [main] INFO  org.eclipse.jetty.server.Server  - Started @13899ms
+21:50:53.529 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @8903ms to org.eclipse.jetty.util.log.Slf4jLog
+21:50:53.761 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 12.0.2+10
+21:50:53.810 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@752448d2{/,null,AVAILABLE}
+21:50:53.849 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@5ab7ef8a{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+21:50:53.849 [main] INFO  org.eclipse.jetty.server.Server  - Started @9226ms
+21:51:41.772 [qtp125477348-20] INFO  io.pedestal.http  - {:msg "GET /json", :line 80}
+21:53:35.900 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @9339ms to org.eclipse.jetty.util.log.Slf4jLog
+21:53:36.114 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 12.0.2+10
+21:53:36.150 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5233b9e0{/,null,AVAILABLE}
+21:53:36.207 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@34538dde{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+21:53:36.207 [main] INFO  org.eclipse.jetty.server.Server  - Started @9649ms
+21:53:47.327 [qtp1056628013-19] INFO  io.pedestal.http  - {:msg "GET /json", :line 80}
